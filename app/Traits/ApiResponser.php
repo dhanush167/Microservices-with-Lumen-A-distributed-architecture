@@ -3,7 +3,7 @@
 namespace App\Traits;
 
 
-use http\Env\Response;
+use Illuminate\Http\Response;
 
 trait ApiResponser
 {
