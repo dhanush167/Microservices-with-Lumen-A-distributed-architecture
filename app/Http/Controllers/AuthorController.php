@@ -42,7 +42,8 @@ class AuthorController extends Controller
 
     public function show($author)
     {
-
+        $author = Author::findOrFail($author);
+        return $this->successResponse($author);
     }
 
     public function update(Request $request,$author)
